@@ -1266,10 +1266,10 @@ a, a:visited, a:hover, a:active {
   justify-items: center;
 }
 
-
+/* On force 1 seule colonne sur les petits écrans */
 @media (max-width: 768px) {
   .fb-container {
-    grid-template-columns: 1fr; 
-    gap: 24px; 
+    grid-template-columns: 1fr !important;
+    gap: 20px;
   }
 }
