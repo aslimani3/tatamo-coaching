@@ -1265,3 +1265,11 @@ a, a:visited, a:hover, a:active {
   margin: 0 auto;
   justify-items: center;
 }
+
+
+@media (max-width: 768px) {
+  .fb-container {
+    grid-template-columns: 1fr; 
+    gap: 24px; 
+  }
+}
