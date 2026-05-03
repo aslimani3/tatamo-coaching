@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Réflexions - Tatamo Coaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bouton de retour -->
+  <a href="index.html" class="back-button">
+    <span class="arrow">←</span> Accueil
+  </a>
+
+  <!-- SDK Facebook obligatoire pour faire marcher les posts -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v23.0"></script>
+
+  <!-- En-tête avec Logo -->
+  <header class="header">
+    <div class="container">
+      <img src="images/bonlogo.PNG" alt="Tatamo Coaching Logo" class="logo">
+    </div>
+  </header>
+
+  <!-- Section Principale -->
+  <section class="facebook-section">
+    <div class="container">
+      
+      <h2 class="hero-title" style="font-size: 40px; text-align: center; margin-bottom: 24px;">Mes réflexions</h2>
+      
+      <div class="divider-center"></div>
+
+      <p class="contact-description" style="margin-bottom: 64px;">
+        Découvrez mes derniers partages, conseils et réflexions sur le leadership et le développement personnel.
+      </p>
+
+      <!-- Conteneur global des posts en grille -->
+      <div class="fb-container">
+        
+        <!-- --- POST 1 --- -->
+        <div class="facebook-item">
+          <h3 class="facebook-post-title">Profil Nova</h3>
+          <div class="fb-post"
+               data-href="https://www.facebook.com/photo/?fbid=10244306746990012&set=a.1147436372293"
+               data-width="500"
+               data-show-text="true">
+          </div>
+        </div>
+
+        <!-- --- POST 2 --- -->
+        <div class="facebook-item">
+          <h3 class="facebook-post-title">Découvrir le Leadership Feminin</h3>
+          <div class="fb-post"
+               data-href="https://www.facebook.com/photo?fbid=10244120120444465&set=a.1147436372293"
+               data-width="500"
+               data-show-text="true">
+          </div>
+        </div>
+
+        <!-- --- POST 3 --- -->
+        <div class="facebook-item">
+          <h3 class="facebook-post-title">Le Coaching</h3>
+          <div class="fb-post"
+               data-href="https://www.facebook.com/photo?fbid=10243571149720540&set=a.10243171436927970"
+               data-width="500"
+               data-show-text="true">
+          </div>
+        </div>
+
+        <!-- --- POST 4 --- -->
+        <div class="facebook-item">
+          <h3 class="facebook-post-title">Les styles de management</h3>
+          <div class="fb-post"
+               data-href="https://www.facebook.com/photo?fbid=10243526368881047&set=a.10243171436927970"
+               data-width="500"
+               data-show-text="true">
+          </div>
+        </div>
+
+      </div> <!-- C'est ICI que le conteneur DOIT se fermer, après les 4 posts ! -->
+
+
+    
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 Tatamo Coaching. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="document.js"></script>
+</body>
+</html>
