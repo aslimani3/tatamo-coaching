@@ -412,6 +412,10 @@ a, a:visited, a:hover, a:active {
     margin-top: 0;
   }
 
+  .hero {
+    padding-top: 20px; /* Rapproche le texte du logo sur mobile */
+  }
+
 
   .hero-title {
     font-size: 48px;
@@ -532,7 +536,8 @@ a, a:visited, a:hover, a:active {
   }
 
   .logo {
-    height: 200px;
+    height: 120px;
+    transform: scale(1.8);
   }
 }
 
