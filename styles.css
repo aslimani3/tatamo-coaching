@@ -404,6 +404,15 @@ a, a:visited, a:hover, a:active {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+.hero, 
+  .offerings, 
+  .about, 
+  .individuel {
+    margin-top: 0;
+  }
+
+
   .hero-title {
     font-size: 48px;
   }
