@@ -1428,3 +1428,58 @@ a, a:visited, a:hover, a:active {
     margin: 0 auto;
   }
 }
+
+/* =========================
+   MISE EN PAGE IMAGE FEMININ (Texte Gauche / Image Droite)
+   ========================= */
+.feminin-layout {
+  display: flex;
+  align-items: center; 
+  gap: 64px;
+  margin-top: 100px; /* Espace avec le haut de la page */
+  margin-bottom: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feminin-text-content {
+  flex: 1; /* Le texte prend l'espace disponible */
+}
+
+.feminin-photo {
+  flex: 0 0 420px; /* Largeur fixe de l'image sur l'ordinateur */
+}
+
+.feminin-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Ombre douce */
+}
+
+/* Ajustements pour les téléphones et tablettes */
+@media (max-width: 900px) {
+  .feminin-layout {
+    flex-direction: column; /* Place l'image sous le texte sur mobile */
+    gap: 48px;
+    margin-top: 80px;
+  }
+  
+  .feminin-text-content .hero-title,
+  .feminin-text-content .intro-text {
+    text-align: center !important; /* On centre le texte sur mobile */
+  }
+
+  .feminin-photo {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+/* On cache l'ancien CSS de la bannière sombre s'il en reste */
+.feminin-hero, .feminin-intro {
+  display: none !important;
+}
