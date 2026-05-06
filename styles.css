@@ -1372,3 +1372,59 @@ a, a:visited, a:hover, a:active {
     padding: 32px 24px;
   }
 }
+
+
+/* =========================
+   MISE EN PAGE IMAGE NOVA
+   ========================= */
+.nova-layout {
+  display: flex;
+  align-items: center; /* Centre verticalement le texte avec l'image */
+  gap: 64px; /* Espace entre le texte et l'image */
+  margin-top: 48px;
+  margin-bottom: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nova-text-content {
+  flex: 1; /* Le texte prend l'espace restant */
+}
+
+.nova-photo {
+  flex: 0 0 450px; /* Largeur fixe de l'image sur ordinateur */
+}
+
+.nova-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Bords très légèrement arrondis */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); /* Ombre douce élégante */
+}
+
+/* Rendre le tout parfait sur téléphone et tablette */
+@media (max-width: 900px) {
+  .nova-layout {
+    flex-direction: column; /* Empile le texte au-dessus de l'image */
+    gap: 48px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .nova-text-content .hero-title,
+  .nova-text-content .intro-text {
+    text-align: center !important; /* On recentre le texte sur mobile */
+  }
+
+  .nova-text-content .intro-text {
+    margin: 0 auto !important;
+  }
+
+  .nova-photo {
+    width: 100%;
+    max-width: 500px; /* Évite que l'image soit trop géante sur tablette */
+    margin: 0 auto;
+  }
+}
