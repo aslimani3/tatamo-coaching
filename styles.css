@@ -1432,7 +1432,11 @@ a, a:visited, a:hover, a:active {
 /* =========================
    FORMULAIRE DE CONTACT
    ========================= */
+.form {
+  background-color: #FAF8F5;
 
+  }
+  
 .contact-section-container {
   display: flex;
   flex-wrap: wrap;
@@ -1440,6 +1444,7 @@ a, a:visited, a:hover, a:active {
   justify-content: space-between;
   margin-top: 64px;
   text-align: left;
+   
 }
 
 .contact-info {
