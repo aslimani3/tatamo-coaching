@@ -2,16 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('.btn');
 
   buttons.forEach(button => {
-    button.addEventListener('click', function(e) {
-      const text = this.textContent;
-
-      if (text.includes('Prendre rendez-vous') || text.includes('Réserver un appel')) {
-        handleBooking();
-      } else if (text.includes('Découvrir')) {
-        handleDiscover();
-      }
-    });
-
     button.addEventListener('mouseenter', function() {
       this.style.transform = 'translateY(-2px)';
     });
@@ -39,17 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(el);
   });
 });
-
-function handleBooking() {
-  alert('Merci d\'votre intérêt!\nRedirection vers la plateforme de réservation...');
-}
-
-function handleDiscover() {
-  const aboutSection = document.querySelector('.about');
-  if (aboutSection) {
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
-  }
-}
 
 const dynamics = [
     {
@@ -102,4 +81,6 @@ function createCard(dynamic) {
 }
 
 const cardsContainer = document.getElementById('cardsContainer');
-cardsContainer.innerHTML = dynamics.map(createCard).join('');
+if (cardsContainer) {
+    cardsContainer.innerHTML = dynamics.map(createCard).join('');
+}
